@@ -5,6 +5,7 @@ is_present=1
 is_abscent=0
 emphr=20
 fulldayhr=8
+parthr=8
 
 for(( i=0; i<5; i++ ))
 do
@@ -21,3 +22,7 @@ done
 #daily employee wage
 daily=$(( emphr*fulldayhr ))
 echo " daily employee wage :$daily"
+
+#part time employee and wage
+dailypart=$(( emphr*parthr ))
+echo "part time employee wage is : $dailypart"
