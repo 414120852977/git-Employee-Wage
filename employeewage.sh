@@ -26,3 +26,18 @@ echo " daily employee wage :$daily"
 #part time employee and wage
 dailypart=$(( emphr*parthr ))
 echo "part time employee wage is : $dailypart"
+#solving usig switch case statements
+
+case $e in
+	$fulldayhr)
+		empfullhr=8
+		;;
+	$parthr)
+		emphr=4
+		;;
+	*)
+	emphrs=0
+		;;
+esac
+salary=$(( $empfullhr*$emphr ))
+echo $salary
