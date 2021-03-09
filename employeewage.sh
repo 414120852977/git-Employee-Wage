@@ -7,6 +7,7 @@ emphr=20
 fulldayhr=8
 parthr=8
 monthday=20
+emp=1
 
 for(( i=0; i<5; i++ ))
 do
@@ -48,3 +49,17 @@ echo $salary
 
 wage_month=$(( $fulldayhr*$monthday*$emphr ))
 echo "wage of a month is : $wage_month"
+
+# calculate wages till a condition of total working hours or days is reached for a month
+  while [ $emp -le $monthday ]
+	do
+		salary=$(( $emphr*$fulldayhr*$monthday ))
+	(( emp++ ))
+	done
+
+
+
+
+
+
+
