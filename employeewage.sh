@@ -58,6 +58,18 @@ echo "wage of a month is : $wage_month"
 	done
 
 
+#write a function to get work hours
+
+function empfullhr(){
+
+empfullhr=8
+}
+
+work_hour=8
+echo $work_hour
+
+
+
 
 
 
