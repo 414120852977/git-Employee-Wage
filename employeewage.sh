@@ -6,6 +6,7 @@ is_abscent=0
 emphr=20
 fulldayhr=8
 parthr=8
+monthday=20
 
 for(( i=0; i<5; i++ ))
 do
@@ -41,3 +42,9 @@ case $e in
 esac
 salary=$(( $empfullhr*$emphr ))
 echo $salary
+
+
+#calculating wages for a month
+
+wage_month=$(( $fulldayhr*$monthday*$emphr ))
+echo "wage of a month is : $wage_month"
