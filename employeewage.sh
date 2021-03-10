@@ -80,6 +80,9 @@ echo $total_wage
 echo "${daily_wage[@]} ${total_wage[@]}"
 
 
+#store the day and the daily wage along with the total wage
 
+echo "monday"
+echo " daily wage : ${daily_wage[@]}  total wage : ${total_wage[@]}"
 
 
