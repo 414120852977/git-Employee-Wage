@@ -69,7 +69,15 @@ work_hour=8
 echo $work_hour
 
 
+#storing daily wage and total wage
 
+daily_wage=$(( $emphr*$fulldayhr ))
+echo $daily_wage
+
+total_wage=$(( $emphr*$fulldayhr*$monthday ))
+echo $total_wage
+
+echo "${daily_wage[@]} ${total_wage[@]}"
 
 
 
